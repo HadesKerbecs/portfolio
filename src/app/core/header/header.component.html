@@ -2,16 +2,20 @@
   <nav>
     <div class="logo">Eduardo Tristão Melo</div>
 
-    <ul>
-      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/projects" routerLinkActive="active">Projetos</a></li>
-      <li><a routerLink="/curriculo" routerLinkActive="active">Currículo</a></li>
+    <button class="menu-toggle" (click)="menuOpen = !menuOpen">
+      ☰
+    </button>
+
+    <ul [class.open]="menuOpen">
+      <li><a routerLink="/" routerLinkActive="active" (click)="menuOpen=false">Home</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active" (click)="menuOpen=false">Projetos</a></li>
+      <li><a routerLink="/curriculo" routerLinkActive="active" (click)="menuOpen=false">Currículo</a></li>
 
       <li class="external">
         <a href="https://github.com/HadesKerbecs" target="_blank">GitHub</a>
       </li>
       <li class="external">
-        <a href="https://www.linkedin.com/in/eduardotm22" target="_blank">LinkedIn</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
       </li>
     </ul>
   </nav>
