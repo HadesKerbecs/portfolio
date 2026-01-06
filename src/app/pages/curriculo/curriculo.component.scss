@@ -1,0 +1,22 @@
+.curriculo {
+  min-height: 70vh;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  background: #00d4ff;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

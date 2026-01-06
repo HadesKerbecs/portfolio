@@ -1,0 +1,25 @@
+@use '../../../styles/variables' as *;
+
+.card {
+  background: $bg-card;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+}
+
+img {
+  width: 100%;
+  height: 220px;  
+  object-fit: contain; 
+  background: #0b1020;
+  display: block;
+}
+
+.info {
+  padding: 1rem;
+}

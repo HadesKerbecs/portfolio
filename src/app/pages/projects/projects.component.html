@@ -1,0 +1,13 @@
+<section class="projects">
+  <app-project-card
+    *ngFor="let project of projects"
+    [project]="project"
+    (open)="open($event)">
+  </app-project-card>
+</section>
+
+<app-project-modal
+  *ngIf="selectedProject"
+  [project]="selectedProject"
+  (close)="close()">
+</app-project-modal>

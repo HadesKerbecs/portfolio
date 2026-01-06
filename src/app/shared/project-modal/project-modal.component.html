@@ -1,0 +1,21 @@
+<div class="overlay" @overlay (click)="closeModal()">
+  <div class="modal" @modal (click)="$event.stopPropagation()">
+    <button class="close" (click)="closeModal()">×</button>
+
+    <img [src]="project.image" [alt]="project.title" />
+
+    <div class="content">
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.longDescription }}</p>
+
+      <ul class="tech">
+        <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+      </ul>
+
+      <div class="actions">
+        <a *ngIf="project.github" [href]="project.github" target="_blank">GitHub</a>
+        <a *ngIf="project.demo" [href]="project.demo" target="_blank">Demo</a>
+      </div>
+    </div>
+  </div>
+</div>

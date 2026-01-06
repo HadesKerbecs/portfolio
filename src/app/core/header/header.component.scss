@@ -1,0 +1,55 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+
+  background: transparent;
+
+  &.scrolled {
+    background: rgba(10, 15, 30, 0.85);
+    backdrop-filter: blur(8px);
+  }
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  color: white;
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: white;
+  }
+
+  &.active {
+    color: #4facfe;
+  }
+}
+
+.external a {
+  opacity: 0.85;
+}

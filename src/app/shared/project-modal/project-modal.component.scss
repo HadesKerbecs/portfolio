@@ -1,0 +1,64 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #12172a;
+  max-width: 900px;
+  width: 90%;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  background: #0b1020;
+  display: block;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.tech {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.tech li {
+  background: #1f2a48;
+  padding: .4rem .8rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  white-space: nowrap;
+}
+
+.actions a {
+  margin-right: 1rem;
+  color: #4facfe;
+}
+
+.close {
+  position: absolute;
+  top: .5rem;
+  right: .75rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
