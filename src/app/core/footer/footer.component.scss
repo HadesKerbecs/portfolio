@@ -1,17 +1,17 @@
 .footer {
-  padding: 3rem 1rem;
+  padding: 2rem 1.5rem;
   text-align: center;
-  background: #050914;
+  background: #0a0f1e;
   color: white;
 
-  a {
-    color: #00d4ff;
-    text-decoration: none;
+  p {
+    opacity: 0.8;
+    font-size: 0.9rem;
   }
+}
 
-  small {
-    display: block;
-    margin-top: 1rem;
-    opacity: 0.6;
+@media (max-width: 480px) {
+  .footer {
+    font-size: 0.85rem;
   }
 }
