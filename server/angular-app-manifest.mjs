@@ -2,29 +2,29 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/Portfolio/',
+  baseHref: '/portfolio/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/Portfolio"
+    "route": "/portfolio"
   },
   {
     "renderMode": 2,
-    "route": "/Portfolio/projects"
+    "route": "/portfolio/projects"
   },
   {
     "renderMode": 2,
-    "route": "/Portfolio/curriculo"
+    "route": "/portfolio/curriculo"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 717, hash: '985a30d1adca990d19a43ac4796110d370fdcc184c5eddff7573fd06b7eb6ece', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 954, hash: 'aefdbbeb2e1876fface09fe2ec3d6f1b1522d4ba7b8635a5417f81fa251ed8d3', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'curriculo/index.html': {size: 6143, hash: 'ca9d564bafca5e1ec800a231f128574d4006373441dea5ce89301f2a34eff920', text: () => import('./assets-chunks/curriculo_index_html.mjs').then(m => m.default)},
-    'index.html': {size: 10178, hash: '8b43584d5ec74675dabe30f8f00f6fcfdf2868e7f40e05fa4d2f830c91f1df1f', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'projects/index.html': {size: 8332, hash: '5a5a5ede4b4680ec27b975ac5c36016631b71053afb98151e2785d02a5ebcd1a', text: () => import('./assets-chunks/projects_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 717, hash: 'e49a0ff252421f9f85a8b2b8cf1111c66de38de8e8ad462f9684967de46a7930', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 954, hash: '03c28b8e01f50dd2d7db74a0314e8859308a35d4a385ad42abd4a55b20e4ad0c', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'curriculo/index.html': {size: 6143, hash: '868ea0b9cea4a93d97b6aae415201da66a9b08f580857637ec55d90fa8b0b268', text: () => import('./assets-chunks/curriculo_index_html.mjs').then(m => m.default)},
+    'index.html': {size: 10178, hash: '41579de3116bfe161ebfef766b3a5d6da0bcf25d81cdc842a3840120e3160046', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'projects/index.html': {size: 8332, hash: '349f16aedc09d6414e0d8871baddcd9c0cf57332c5878ba9c243a1188d8b8607', text: () => import('./assets-chunks/projects_index_html.mjs').then(m => m.default)},
     'styles-3NQ6ULQC.css': {size: 269, hash: 'G3/4GbXM/aM', text: () => import('./assets-chunks/styles-3NQ6ULQC_css.mjs').then(m => m.default)}
   },
 };
