@@ -2,11 +2,13 @@
   <div class="modal" @modal (click)="$event.stopPropagation()">
     <button class="close" (click)="closeModal()">×</button>
 
-    <img [src]="project.image" [alt]="project.title" />
+    <div class="image-hero">
+      <img [src]="project.image" [alt]="project.title" />
+    </div>
 
     <div class="content">
       <h2>{{ project.title }}</h2>
-      <p>{{ project.longDescription }}</p>
+      <p class="description">{{ project.longDescription }}</p>
 
       <ul class="tech">
         <li *ngFor="let tech of project.technologies">{{ tech }}</li>

@@ -6,82 +6,210 @@ export class ProjectsService {
 
   projects: Project[] = [
     {
-      title: 'SkyPulse — Plataforma Full Stack',
-      description: 'Plataforma full stack para coleta, processamento e visualização de dados com IA.',
+      title: 'SkyPulse — Plataforma Full‑Stack com Autenticação JWT, CRUD de Usuários e Integrações',
+      description: 'Plataforma full stack para coleta, processamento e visualização de dados com uso de IA.',
       longDescription: `
-Aplicação full stack moderna voltada à integração de múltiplos serviços e tecnologias.
+📌 Visão Geral
+Aplicação full stack moderna voltada à integração de múltiplos serviços, coleta de dados
+reais e geração de insights inteligentes a partir de informações climáticas.
 
-O sistema coleta dados climáticos em tempo real por meio de APIs públicas como Open-Meteo,
-processa essas informações utilizando um backend em NestJS e as armazena em banco de dados.
+🌦️ Coleta e Processamento de Dados
+• Coleta periódica de dados climáticos via APIs públicas (Open-Meteo / OpenWeather)  
+• Processamento assíncrono por meio de workers  
+• Armazenamento estruturado em backend  
 
-O frontend foi desenvolvido em React com Vite, apresentando dashboards interativos para
-visualização dos dados coletados. A aplicação também gera insights automatizados com uso
-de Inteligência Artificial.
+📊 Dashboard e Visualização
+• Dashboard interativo para visualização dos dados coletados  
+• Apresentação clara de métricas e históricos climáticos  
+• Interface moderna e responsiva  
 
-Toda a arquitetura é orquestrada via Docker Compose, incluindo autenticação JWT,
-CRUD de usuários, integração com APIs externas (PokéAPI, SWAPI) e exportação de dados.
+🧠 Inteligência Artificial
+• Geração de insights automatizados a partir dos dados climáticos  
+• Análises sob demanda ou periódicas  
+
+🧱 Arquitetura e Tecnologias
+• Backend em NestJS com autenticação JWT  
+• Frontend em React + Vite  
+• Integração com APIs externas (Open-Meteo, PokéAPI, SWAPI)  
+• CRUD de usuários  
+• Exportação de dados  
+• Orquestração completa via Docker Compose  
       `,
       image: 'assets/images/projects/SkyPulse.png',
-      technologies: ['React', 'NestJS', 'Docker', 'JWT', 'APIs', 'IA'],
+      technologies: ['React',
+        'Vite',
+        'NestJS',
+        'JWT',
+        'APIs REST',
+        'Docker',
+        'Docker Compose',
+        'Inteligência Artificial'],
     },
 
     {
       title: 'PsicoSimula — Ferramenta Web para Psicopatologia (IAG)',
-      description: 'Ferramenta educacional para geração de casos clínicos com IA generativa.',
+      description: 'Ferramenta educacional para geração de casos clínicos com Inteligência Artificial Generativa.',
       longDescription: `
+📌 Visão Geral
 Plataforma web desenvolvida para apoiar o ensino e estudo da psicopatologia por meio
-do uso de Inteligência Artificial Generativa.
+da utilização de Inteligência Artificial Generativa.
 
-A aplicação permite a criação de casos clínicos personalizados a partir de parâmetros
-definidos pelo usuário, como idade, sexo, histórico médico e nível de complexidade.
-Os cenários são gerados com apoio da API do ChatGPT, promovendo uma experiência de
-aprendizado dinâmica e imersiva.
+🧠 Geração de Casos Clínicos
+• Criação de casos clínicos hipotéticos personalizados  
+• Parâmetros configuráveis (idade, sexo, histórico médico, complexidade)  
+• Apoio ao raciocínio clínico e diagnóstico  
 
-O sistema foi desenvolvido com backend em Django, incluindo persistência de dados,
-armazenamento de histórico de interações e feedback automatizado, facilitando a
-prática diagnóstica e o desenvolvimento do raciocínio clínico.
+🤖 Inteligência Artificial Generativa
+• Integração com a API do ChatGPT  
+• Geração dinâmica e contextualizada de cenários clínicos  
+• Experiência de aprendizado imersiva  
+
+🗂️ Persistência e Histórico
+• Armazenamento de interações  
+• Histórico de casos gerados  
+• Feedback automatizado  
+
+🧱 Arquitetura e Tecnologias
+• Backend em Django  
+• API REST  
+• Organização modular  
+• Foco em usabilidade e experiência do usuário  📌 Visão Geral
+Plataforma web desenvolvida para apoiar o ensino e estudo da psicopatologia por meio
+da utilização de Inteligência Artificial Generativa.
+
+🧠 Geração de Casos Clínicos
+• Criação de casos clínicos hipotéticos personalizados  
+• Parâmetros configuráveis (idade, sexo, histórico médico, complexidade)  
+• Apoio ao raciocínio clínico e diagnóstico  
+
+🤖 Inteligência Artificial Generativa
+• Integração com a API do ChatGPT  
+• Geração dinâmica e contextualizada de cenários clínicos  
+• Experiência de aprendizado imersiva  
+
+🗂️ Persistência e Histórico
+• Armazenamento de interações  
+• Histórico de casos gerados  
+• Feedback automatizado  
+
+🧱 Arquitetura e Tecnologias
+• Backend em Django  
+• API REST  
+• Organização modular  
+• Foco em usabilidade e experiência do usuário  📌 Visão Geral
+Plataforma web desenvolvida para apoiar o ensino e estudo da psicopatologia por meio
+da utilização de Inteligência Artificial Generativa.
+
+🧠 Geração de Casos Clínicos
+• Criação de casos clínicos hipotéticos personalizados  
+• Parâmetros configuráveis (idade, sexo, histórico médico, complexidade)  
+• Apoio ao raciocínio clínico e diagnóstico  
+
+🤖 Inteligência Artificial Generativa
+• Integração com a API do ChatGPT  
+• Geração dinâmica e contextualizada de cenários clínicos  
+• Experiência de aprendizado imersiva  
+
+🗂️ Persistência e Histórico
+• Armazenamento de interações  
+• Histórico de casos gerados  
+• Feedback automatizado  
+
+🧱 Arquitetura e Tecnologias
+• Backend em Django  
+• API REST  
+• Organização modular  
+• Foco em usabilidade e experiência do usuário  
       `,
       image: 'assets/images/projects/PsicoSimula.png',
-      technologies: ['Angular', 'Django', 'OpenAI', 'IA Generativa'],
+      technologies: ['Angular',
+        'TypeScript',
+        'Django',
+        'Django REST Framework',
+        'OpenAI',
+        'IA Generativa'],
     },
 
     {
-      title: 'GiveLife — Aplicativo Mobile Hospitalar',
-      description: 'Aplicativo mobile voltado à doação de sangue e engajamento de doadores.',
+      title: 'ControleFinanceiro — Aplicativo Mobile de Finanças Pessoais',
+      description: 'Sistema web de controle financeiro pessoal com dashboard interativo, regras de negócio e arquitetura Full Stack.',
       longDescription: `
-O GiveLife é um aplicativo mobile desenvolvido com o objetivo de facilitar e incentivar
-o processo de doação de sangue.
+📌 Visão Geral
+Sistema web de controle financeiro pessoal desenvolvido para organizar despesas,
+compromissos futuros e oferecer uma visão clara do impacto financeiro real no dia a dia.
 
-A aplicação conta com dois módulos: um módulo público, acessível sem login, que oferece
-informações essenciais sobre doação, requisitos, campanhas, dúvidas frequentes e
-localização de hemocentros; e um módulo autenticado, onde o usuário pode agendar doações,
-consultar protocolos, acessar exames, acompanhar histórico de doações e visualizar
-benefícios e bonificações.
+📊 Funcionalidades Principais
+• Cadastro de despesas à vista ou parceladas  
+• Categorias e subcategorias personalizadas  
+• Múltiplas formas de pagamento (Cartão, Pix, Dinheiro e Fiado)  
+• Geração automática e controle de parcelas  
+• Reversão de pagamentos realizados  
 
-O projeto foi desenvolvido com foco em usabilidade e experiência do usuário, utilizando
-Flutter e FlutterFlow para prototipação e desenvolvimento ágil.
+💳 Gestão Financeira
+• Cadastro e gerenciamento de cartões de crédito  
+• Cálculo automático de limite disponível  
+• Controle de compromissos fixos recorrentes  
+• Separação entre gastos próprios e despesas de terceiros  
+
+📈 Dashboard Financeiro
+• Distribuição de gastos por categoria e subcategoria  
+• Evolução mensal de despesas  
+• Comparativos entre períodos  
+• Parcelas a vencer  
+• Indicadores de gasto real para apoio à tomada de decisão  
+
+🧠 Arquitetura e Conceitos
+Aplicação desenvolvida com foco em arquitetura Full Stack, regras de negócio bem
+definidas, organização de código e experiência do usuário. Todo o ambiente é
+padronizado com Docker para garantir consistência no desenvolvimento.
       `,
-      image: 'assets/images/projects/GiveLife.png',
-      technologies: ['Flutter', 'FlutterFlow', 'UX/UI'],
+      image: 'assets/images/projects/ControleFinanceiro.png',
+      technologies: ['Angular',
+        'TypeScript',
+        'Django',
+        'Django REST Framework',
+        'PostgreSQL',
+        'Docker',
+        'Docker Compose',
+        'ApexCharts'],
     },
 
     {
       title: 'Sistema Inteligente de Atendimento via WhatsApp',
-      description: 'Plataforma de atendimento automatizado via WhatsApp com IA.',
+      description: 'Plataforma de atendimento automatizado via WhatsApp com uso de Inteligência Artificial.',
       longDescription: `
-Sistema completo de atendimento comercial automatizado via WhatsApp, desenvolvido
-para suportar múltiplas empresas em um único ambiente.
+📌 Visão Geral
+Sistema de atendimento comercial automatizado via WhatsApp, desenvolvido para
+atender múltiplas empresas em um único ambiente.
 
-A plataforma possui painel administrativo em Angular, backend em Node.js com autenticação
-JWT e integração com a API da OpenAI para geração de respostas inteligentes. O envio e
-recebimento de mensagens é realizado via API do WhatsApp (Twilio, de forma momentânea).
+💬 Atendimento Automatizado
+• Envio e recebimento de mensagens via WhatsApp  
+• Respostas inteligentes geradas por IA  
+• Atendimento simultâneo para múltiplos clientes  
 
-O sistema inclui gerenciamento de empresas, usuários, produtos, histórico de mensagens
-com limpeza automática e isolamento de dados por empresa, garantindo segurança e
-escalabilidade da solução.
+🧠 Inteligência Artificial
+• Integração com a API da OpenAI  
+• Geração automática de respostas contextualizadas  
+
+🧱 Painel Administrativo
+• Painel web para gerenciamento de empresas e usuários  
+• Histórico de mensagens  
+• Isolamento de dados por empresa  
+
+🔐 Arquitetura e Segurança
+• Backend em Node.js  
+• Autenticação JWT  
+• Integração com API do WhatsApp (Twilio – momentâneo)  
+• Arquitetura escalável e segura  
       `,
       image: 'assets/images/projects/WhatsApp.png',
-      technologies: ['Angular', 'Node.js', 'OpenAI', 'JWT', 'MongoDB', 'WhatsApp API'],
+      technologies: ['Angular',
+        'TypeScript',
+        'Node.js',
+        'OpenAI',
+        'JWT',
+        'MongoDB',
+        'WhatsApp API'],
     }
   ];
 
