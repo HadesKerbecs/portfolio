@@ -12,6 +12,20 @@
   }
 }
 
+.card-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.card-actions a,
+.card-actions button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
 img {
   width: 100%;
   aspect-ratio: 16 / 9;

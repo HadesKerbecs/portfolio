@@ -44,6 +44,8 @@ reais e geração de insights inteligentes a partir de informações climáticas
         'Docker',
         'Docker Compose',
         'Inteligência Artificial'],
+      demo: 'https://skypulse-frontend.onrender.com',
+      github: 'https://github.com/HadesKerbecs/SkyPulse'
     },
 
     {
@@ -128,6 +130,8 @@ da utilização de Inteligência Artificial Generativa.
         'Django REST Framework',
         'OpenAI',
         'IA Generativa'],
+        demo: 'https://psicosimula.onrender.com',
+        github: 'https://github.com/HadesKerbecs/PsicoSimula'
     },
 
     {
@@ -172,6 +176,9 @@ padronizado com Docker para garantir consistência no desenvolvimento.
         'Docker',
         'Docker Compose',
         'ApexCharts'],
+        demo: 'https://controlefinanceiro-1-7l04.onrender.com',
+        github: 'https://github.com/HadesKerbecs/ControleFinanceiro',
+
     },
 
     {
@@ -210,6 +217,7 @@ atender múltiplas empresas em um único ambiente.
         'JWT',
         'MongoDB',
         'WhatsApp API'],
+        github: 'https://github.com/HadesKerbecs/Projeto_WhatsApp.git'
     }
   ];
 
