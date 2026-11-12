@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./curriculo.component.scss'],
 })
 export class CurriculoComponent {
-  cvUrl = 'assets/images/docs/Eduardo_Tristao_Melo_CV_Frontend.pdf';
+  cvUrl = 'assets/images/docs/Eduardo_Tristao_Melo_FullStack_Curriculo.pdf';
 }
