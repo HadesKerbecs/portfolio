@@ -3,11 +3,12 @@ import { Project } from '../models/project.model';
 
 @Injectable({ providedIn: 'root' })
 export class ProjectsService {
-
   projects: Project[] = [
     {
-      title: 'SkyPulse — Plataforma Full‑Stack com Autenticação JWT, CRUD de Usuários e Integrações',
-      description: 'Plataforma full stack para coleta, processamento e visualização de dados com uso de IA.',
+      title:
+        'SkyPulse — Plataforma Full‑Stack com Autenticação JWT, CRUD de Usuários e Integrações',
+      description:
+        'Plataforma full stack para coleta, processamento e visualização de dados com uso de IA.',
       longDescription: `
 📌 Visão Geral
 Aplicação full stack moderna voltada à integração de múltiplos serviços, coleta de dados
@@ -36,21 +37,24 @@ reais e geração de insights inteligentes a partir de informações climáticas
 • Orquestração completa via Docker Compose  
       `,
       image: 'assets/images/projects/SkyPulse.png',
-      technologies: ['React',
+      technologies: [
+        'React',
         'Vite',
         'NestJS',
         'JWT',
         'APIs REST',
         'Docker',
         'Docker Compose',
-        'Inteligência Artificial'],
+        'Inteligência Artificial',
+      ],
       demo: 'https://skypulse-frontend.onrender.com',
-      github: 'https://github.com/HadesKerbecs/SkyPulse'
+      github: 'https://github.com/HadesKerbecs/SkyPulse',
     },
 
     {
       title: 'PsicoSimula — Ferramenta Web para Psicopatologia (IAG)',
-      description: 'Ferramenta educacional para geração de casos clínicos com Inteligência Artificial Generativa.',
+      description:
+        'Ferramenta educacional para geração de casos clínicos com Inteligência Artificial Generativa.',
       longDescription: `
 📌 Visão Geral
 Plataforma web desenvolvida para apoiar o ensino e estudo da psicopatologia por meio
@@ -124,19 +128,22 @@ da utilização de Inteligência Artificial Generativa.
 • Foco em usabilidade e experiência do usuário  
       `,
       image: 'assets/images/projects/PsicoSimula.png',
-      technologies: ['Angular',
+      technologies: [
+        'Angular',
         'TypeScript',
         'Django',
         'Django REST Framework',
         'OpenAI',
-        'IA Generativa'],
-        demo: 'https://psicosimula.onrender.com',
-        github: 'https://github.com/HadesKerbecs/PsicoSimula'
+        'IA Generativa',
+      ],
+      demo: 'https://psicosimula.onrender.com',
+      github: 'https://github.com/HadesKerbecs/PsicoSimula',
     },
 
     {
       title: 'ControleFinanceiro — Aplicativo Mobile de Finanças Pessoais',
-      description: 'Sistema web de controle financeiro pessoal com dashboard interativo, regras de negócio e arquitetura Full Stack.',
+      description:
+        'Sistema web de controle financeiro pessoal com dashboard interativo, regras de negócio e arquitetura Full Stack.',
       longDescription: `
 📌 Visão Geral
 Sistema web de controle financeiro pessoal desenvolvido para organizar despesas,
@@ -168,22 +175,93 @@ definidas, organização de código e experiência do usuário. Todo o ambiente 
 padronizado com Docker para garantir consistência no desenvolvimento.
       `,
       image: 'assets/images/projects/ControleFinanceiro.png',
-      technologies: ['Angular',
+      technologies: [
+        'Angular',
         'TypeScript',
         'Django',
         'Django REST Framework',
         'PostgreSQL',
         'Docker',
         'Docker Compose',
-        'ApexCharts'],
-        demo: 'https://controlefinanceiro-1-7l04.onrender.com',
-        github: 'https://github.com/HadesKerbecs/ControleFinanceiro',
+        'ApexCharts',
+      ],
+      demo: 'https://controlefinanceiro-1-7l04.onrender.com',
+      github: 'https://github.com/HadesKerbecs/ControleFinanceiro',
+    },
 
+    {
+      title: 'Portal de Solicitações Internas — Sistema Full Stack',
+      description:
+        'Aplicação web para registro, acompanhamento e gerenciamento de solicitações internas, com autenticação JWT, filtros avançados e dashboard administrativo.',
+      longDescription: `
+📌 Visão Geral
+Sistema web desenvolvido para centralizar o registro, acompanhamento e gerenciamento de solicitações internas, permitindo organizar demandas por categoria, status e período.
+
+🔐 Autenticação e Gerenciamento de Usuários
+• Cadastro e autenticação de usuários
+• Autenticação baseada em JWT (Access Token e Refresh Token)
+• Controle de sessão e logout
+• Proteção de rotas e endpoints autenticados
+• Monitoramento da expiração do Access Token
+
+📋 Gestão de Solicitações
+• Cadastro, edição e exclusão de solicitações
+• Consulta detalhada de solicitações
+• Alteração de status
+• Identificação automática do usuário solicitante
+• Controle de operações conforme o status da solicitação
+
+🔎 Listagem e Filtros
+• Paginação de resultados
+• Filtros combináveis por categoria, status, título e período
+• Ordenação por data
+• Controle da quantidade de registros por página
+
+📊 Dashboard e Indicadores
+• Visualização do total de solicitações
+• Indicadores de solicitações por status
+• Acompanhamento das demandas registradas
+
+🧱 Arquitetura e Tecnologias
+• Frontend desenvolvido em Angular e TypeScript
+• Backend desenvolvido em Python com Django REST Framework
+• API REST para comunicação entre frontend e backend
+• Persistência de dados com PostgreSQL 17
+• Autenticação utilizando Django REST Framework Simple JWT
+• Interceptor HTTP para gerenciamento do token JWT
+• Ambiente de backend e banco de dados containerizado com Docker e Docker Compose
+
+⚙️ Regras de Negócio
+• Solicitações são criadas automaticamente com status ABERTO
+• Apenas solicitações abertas podem ser editadas ou excluídas
+• Solicitações concluídas não permitem alteração de status
+• Validações e regras de negócio centralizadas no backend
+
+📚 Documentação Técnica
+• Memorial Técnico de Desenvolvimento
+• Dicionário de Dados
+• Documentação da arquitetura, modelagem e decisões técnicas
+  `,
+      image: 'assets/images/projects/SolicitacoesInternas.png',
+      technologies: [
+        'Angular',
+        'TypeScript',
+        'RxJS',
+        'Python',
+        'Django',
+        'Django REST Framework',
+        'PostgreSQL',
+        'JWT',
+        'Docker',
+        'Docker Compose',
+      ],
+      github: 'https://github.com/HadesKerbecs/portal-solicitacoes-internas.git',
     },
 
     {
       title: 'Sistema Inteligente de Atendimento via WhatsApp',
-      description: 'Plataforma de atendimento automatizado via WhatsApp com uso de Inteligência Artificial.',
+      description:
+        'Plataforma de atendimento automatizado via WhatsApp com uso de Inteligência Artificial.',
       longDescription: `
 📌 Visão Geral
 Sistema de atendimento comercial automatizado via WhatsApp, desenvolvido para
@@ -210,15 +288,17 @@ atender múltiplas empresas em um único ambiente.
 • Arquitetura escalável e segura  
       `,
       image: 'assets/images/projects/WhatsApp.png',
-      technologies: ['Angular',
+      technologies: [
+        'Angular',
         'TypeScript',
         'Node.js',
         'OpenAI',
         'JWT',
         'MongoDB',
-        'WhatsApp API'],
-        github: 'https://github.com/HadesKerbecs/Projeto_WhatsApp.git'
-    }
+        'WhatsApp API',
+      ],
+      github: 'https://github.com/HadesKerbecs/Projeto_WhatsApp.git',
+    },
   ];
 
   getProjects() {
